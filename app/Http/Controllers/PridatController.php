@@ -14,6 +14,7 @@ class PridatController extends BaseController
 
     private $genreService;
 
+
     public function __construct()
     {
         $this->genreService = new GenreServiceProvider();
@@ -24,7 +25,6 @@ class PridatController extends BaseController
         $genreList = $this->genreService->readAll();
         return view('pridat', ['genreList' => $genreList]);
     }
-
 
     public function createBook()
     {
@@ -39,5 +39,4 @@ class PridatController extends BaseController
 
         return $this->index();
     }
-
 }

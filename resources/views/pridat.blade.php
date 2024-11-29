@@ -117,7 +117,6 @@
             if (!userPassword.value.trim?.() || passwordChecker(userEmail.value, userPassword.value))
                 return error('Zadané heslo nie je správne.');
 
-
             if (!bookName.value.trim?.())
                 return error('Názov knihy nesmie byť prázdny.');
 
@@ -135,7 +134,6 @@
 
             alert('OK');
         };
-
 
         form.addEventListener('submit', evt => {
             evt.preventDefault();
