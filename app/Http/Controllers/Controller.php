@@ -37,4 +37,9 @@ class Controller extends BaseController
         return view('stalice', ['books' => $allBooks]);
     }
 
+    public function pridat()
+    {
+        $genreList = $this->genreService->readAll();
+        return view('pridat', ['genreList' => $genreList]);
+    }
 }

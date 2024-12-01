@@ -25,7 +25,7 @@ Route::get('/detail/{id}', [\App\Http\Controllers\Controller::class, 'detail']);
 
 Route::get('/stalice', [\App\Http\Controllers\Controller::class, 'stalice']);
 
-Route::get('/pridat', [\App\Http\Controllers\PridatController::class, 'index']);
+Route::get('/pridat', [\App\Http\Controllers\Controller::class, 'pridat']);
 
 Route::get('/api/credentials', [\App\Http\Controllers\ValidationController::class, 'authorize']);
 
